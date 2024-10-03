@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.has-tooltip {
+    @apply relative inline-block;
+}
+
+.tooltip {
+    @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50 bottom-[104%] left-1/2 transform -translate-x-1/2 opacity-85 bg-neutral-800 text-neutral-100 p-2 rounded-md;
+}
